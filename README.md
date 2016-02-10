@@ -5,7 +5,7 @@ Spring-Boot-API
 
 ## Dependencies
 * Java 1.8 or Higher
-* Gradle 2.10
+* Gradle 2.11 or Higher
 
 ## Project Setup
 * `git clone git@github.com:chriscantu/spring-boot-api.git`
