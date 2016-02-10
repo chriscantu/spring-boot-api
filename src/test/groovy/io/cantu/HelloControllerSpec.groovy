@@ -19,6 +19,9 @@ class HelloControllerSpec extends Specification {
     @AutoCleanup
     ConfigurableApplicationContext context
 
+    @Shared
+    def baseUrl = "http://localhost:8080/hello"
+
     void setupSpec() {
         Future future = Executors
                         .newSingleThreadExecutor().submit(
@@ -41,8 +44,10 @@ class HelloControllerSpec extends Specification {
         entity.body == response
 
         where:
-        url                                     || response
-        'http://localhost:8080/hello'           || 'Hello, World!'
+        url                         || response
+        baseUrl                     || 'Hello, World!'
+        "${baseUrl}?name=Team"      || 'Hello, Team!'
+        "${baseUrl}?name=Guys"      || 'Hello, Guys!'
     }
 
 }
