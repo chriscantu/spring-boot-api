@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 @RequestMapping("/hello")
 public class HelloController {
-    private static final String template = "Hellos, %s!";
+    private static final String template = "Hello, %s!";
 
     @RequestMapping(method = RequestMethod.GET)
     public String hello(@RequestParam(value="name", defaultValue="World") String name) {
