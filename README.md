@@ -1,3 +1,5 @@
+[ ![Codeship Status for chriscantu/spring-boot-api](https://codeship.com/projects/045c5bb0-b1d1-0133-6b78-66cd7c0bebc3/status?branch=master)](https://codeship.com/projects/133177)
+
 Spring-Boot-API
 ===============
 
